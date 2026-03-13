@@ -236,7 +236,7 @@
   }
 
   .mission-card-img {
-    @apply w-full object-cover h-72;
+    @apply w-full object-cover h-68;
   }
 
   .mission-card-badge {
