@@ -1,0 +1,215 @@
+@import "tailwindcss";
+
+/* space-grotesk-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/space-grotesk-v22-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-grotesk-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/space-grotesk-v22-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-grotesk-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/space-grotesk-v22-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-grotesk-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/space-grotesk-v22-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-grotesk-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/space-grotesk-v22-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inter-v20-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@theme {
+  --font-sans: "Space Grotesk", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --color-deep-space: #0a0a0f;
+  --color-cosmic-blue: #1a1a2e;
+  --color-nebula-purple: #16213e;
+  --color-starlight: #e94560;
+  --color-accent-cyan: #0f3460;
+  --color-text-primary: #eaeaea;
+  --color-text-secondary: #a0a0a0;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth scroll-p-16;
+  }
+
+  body {
+    @apply overflow-x-hidden font-inter bg-deep-space text-text-primary leading-relaxed;
+  }
+  .container {
+    @apply max-w-7xl w-full mx-auto px-4;
+  }
+
+  .container {
+    @apply max-w-7xl w-full mx-auto px-12;
+  }
+  h1 {
+    font-size: clamp(3.4rem, 6vw, 5rem);
+    @apply font-bold;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    @apply font-bold;
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 4vw, 2rem);
+    @apply font-bold;
+  }
+
+  h4 {
+    font-size: clamp(1.5rem, 3vw, 1.75rem);
+  }
+
+  h5 {
+    @apply text-xl font-semibold;
+  }
+
+  h6 {
+    @apply text-lg font-semibold;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans tracking-tight;
+  }
+}
+
+@layer components {
+  /* header s */
+  .headerNav ul {
+    @apply flex flex-col gap-5 fixed w-full top-26 text-left 
+    items-start overflow-hidden right-0 h-0 opacity-0 duration-300
+    /* tablet - desktop */
+    md:opacity-100 md:flex-row md:items-center md:top-auto
+    md:h-auto md:static md:shadow-none;
+  }
+
+  .headerNav ul.open {
+    @apply h-fit opacity-100 bg-white dark:bg-gray-900 shadow-md w-full top-22
+    px-4 py-10 pb-3 duration-300
+    /* tablet-desktop */
+    md:shadow-none md:px-0 md:pb-0;
+  }
+  .toggleMenu span {
+    @apply inline-block w-5 h-0.5 rounded-xl bg-black/80 dark:bg-white/80;
+  }
+  .toggleMenu.open span:first-child {
+    @apply rotate-45 translate-y-2 duration-100;
+  }
+  .toggleMenu.open span:nth-child(2) {
+    @apply opacity-0;
+  }
+  .toggleMenu.open span:last-child {
+    @apply -rotate-45 -translate-y-1 duration-100;
+  }
+
+  .toggleMenu {
+    @apply flex flex-col gap-1 
+    /* tablet-desktop */
+    md:hidden;
+  }
+
+  .transparent {
+    @apply hidden;
+  }
+  .transparent.open {
+    @apply block fixed h-screen w-full backdrop-blur-sm left-0 
+    top-75 duration-300 overflow-y-hidden;
+  }
+
+  /* button */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full font-sans font-semibold text-sm cursor-pointer transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-starlight text-white hover:opacity-90 active:scale-95;
+  }
+
+  .btn-outline {
+    @apply bg-transparent border border-text-secondary text-text-primary hover:border-text-primary active:scale-95;
+  }
+  /* gradient text */
+  .text-gradient {
+    @apply bg-gradient-to-b from-white to-starlight bg-clip-text text-transparent font-bold;
+  }
+  /* metric cards */
+  .stat-card {
+    @apply bg-cosmic-blue rounded-xl p-14 text-center;
+  }
+
+  .stat-card-value {
+    @apply text-starlight font-sans font-bold text-4xl;
+  }
+
+  .stat-card-label {
+    @apply text-text-secondary text-sm mt-5;
+  }
+  /* cta btn */
+  .social-btn {
+    @apply w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-text-secondary hover:border-white/50 hover:text-text-primary transition-all duration-300;
+  }
+}
