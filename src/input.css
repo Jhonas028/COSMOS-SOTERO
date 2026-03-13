@@ -77,6 +77,7 @@
 @theme {
   --font-sans: "Space Grotesk", sans-serif;
   --font-inter: "Inter", sans-serif;
+
   --color-deep-space: #0a0a0f;
   --color-cosmic-blue: #1a1a2e;
   --color-nebula-purple: #16213e;
@@ -180,6 +181,22 @@
     top-75 duration-300 overflow-y-hidden;
   }
 
+  /* nav hover with underline effect */
+  .headerNav ul li a {
+    @apply relative text-text-primary/70 font-medium transition-colors duration-300;
+  }
+
+  .headerNav ul li a::after {
+    content: "";
+    @apply absolute left-0 -bottom-1 w-0 h-0.5 bg-starlight transition-all duration-300;
+  }
+
+  .headerNav ul li a:hover::after {
+    @apply w-full;
+  }
+
+  /* header end */
+
   /* button */
   .btn {
     @apply inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full font-sans font-semibold text-sm cursor-pointer transition-all duration-300;
@@ -211,5 +228,50 @@
   /* cta btn */
   .social-btn {
     @apply w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-text-secondary hover:border-white/50 hover:text-text-primary transition-all duration-300;
+  }
+
+  /* mission card */
+  .mission-card {
+    @apply relative bg-cosmic-blue rounded-2xl overflow-hidden;
+  }
+
+  .mission-card-img {
+    @apply w-full object-cover h-72;
+  }
+
+  .mission-card-badge {
+    @apply absolute top-4 right-4 text-xs font-bold tracking-widest px-4 py-1.5 rounded-full border bg-starlight/40 text-starlight;
+  }
+
+  .mission-card-badge-active {
+    @apply bg-green-900/80 text-green-400 border-green-600/50;
+  }
+
+  .mission-card-body {
+    @apply p-6;
+  }
+
+  .mission-card-date {
+    @apply text-starlight text-sm font-semibold flex items-center gap-2;
+  }
+
+  .mission-card-title {
+    @apply text-text-primary font-bold mt-2;
+  }
+
+  .mission-card-desc {
+    @apply text-text-secondary text-sm mt-3 leading-relaxed;
+  }
+
+  .mission-card-divider {
+    @apply border-t border-white/20 mt-8;
+  }
+
+  .mission-card-footer {
+    @apply flex items-center gap-6 mt-6 text-text-secondary text-sm;
+  }
+
+  .mission-card-footer span {
+    @apply flex items-center gap-1.5;
   }
 }
