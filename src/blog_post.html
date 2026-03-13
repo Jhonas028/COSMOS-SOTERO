@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is cosmos website" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <!-- in your <head> -->
+
+    <title>Home</title>
+  </head>
+  <body class="">
+    <!-- >> header -->
+    <header class="py-7 relative shadow-md w-full z-50">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center my-auto text-center">
+            <img class="size-15" src="../img/logo.png" alt="" />
+            <span class="text-4xl font-bold mb-1">COSMOS</span>
+          </div>
+          <nav class="headerNav">
+            <ul>
+              <li><a href="../src/index.html">Home</a></li>
+              <li>
+                <a href="../src/missions.html" class="text-starlight"
+                  >Missions</a
+                >
+              </li>
+              <li><a href="../src/spacecraft.html">Spacecraft</a></li>
+              <li><a href="../src/spacecraft.html">Gallery</a></li>
+              <li><a href="../src/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="toggleMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- overlay backdrop -->
+          <div class="transparent"></div>
+        </div>
+      </div>
+    </header>
+    <!-- blog header -->
+    <section class="relative h-[720px] bg-cover bg-center pt-[150px]">
+      <!-- bg image with opacity -->
+      <div
+        style="background-image: url(&quot;../img/a6.jpg&quot;)"
+        class="absolute inset-0 bg-cover bg-center opacity-40"
+      ></div>
+
+      <div class="container">
+        <!-- wrapper -->
+        <div class="">
+          <!-- anchor -->
+
+          <nav class="flex items-center gap-2 text-sm text-text-secondary mb-7">
+            <a
+              href="../src/index.html"
+              class="hover:text-text-primary transition-colors duration-300"
+              >Home</a
+            >
+            <span>→</span>
+            <a
+              href="../src/missions.html"
+              class="hover:text-text-primary transition-colors duration-300"
+              >Missions</a
+            >
+            <span>→</span>
+            <span class="text-text-primary">Perseverance Rover</span>
+          </nav>
+
+          <span
+            class="font-bold tracking-widest px-4 py-1.5 rounded-full border bg-green-900/80 text-green-400 border-green-600/50"
+            >ACTIVE</span
+          >
+          <p class="text-text-primary mt-5">📅 Launched: July 2020</p>
+          <h1>Perseverance Rover</h1>
+
+          <h3>
+            Exploring Mars' Jezero Crater to seek signs of ancient life and
+            collect samples for future return to Earth. The most sophisticated
+            rover ever sent to the Red Planet.
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog body -->
+    <!-- blog header -->
+    <section class="relative h-[400px] bg-cover bg-center pt-[5px]">
+      <!-- bg image with opacity -->
+      <div
+        style="background-image: url(&quot;../img/stars.jpg&quot;)"
+        class="fixed inset-0 bg-cover bg-center opacity-40 -z-10"
+      ></div>
+
+      <div class="container">
+        <!-- wrapper -->
+        <div class="">
+          <!-- left -->
+          <div>
+            <!-- p1 -->
+            <h3>
+              The Mars 2020 Perseverance rover mission is part of NASA's Mars
+              Exploration Program, a long-term effort of robotic exploration of
+              the Red Planet. The mission 'addresses high-. priority science
+              goals for Mars exploration, including key questions about the
+              potential for life on Mars.
+            </h3>
+            <!-- p2 -->
+            <h3 class="pt-10">
+              Perseverance is designed to better understand the geology of Mars
+              and seek signs of ancient life. The mission will collect and store
+              a set of rock and soil samples that could be returned to Earth in
+              the future. It will also test new technology to benefit future
+              robotic and human exploration of Mars.
+            </h3>
+            <!-- objectives -->
+            <div>
+              <h3 class="font-bold text-text-primary">Mission Objectives</h3>
+              <hr class="border-t border-starlight/50 mt-3 mb-6 w-48" />
+              <ul
+                class="list-disc list-outside text-text-secondary text-sm leading-relaxed space-y-3 pl-4"
+              >
+                <li>Explore geologically diverse landing site</li>
+                <li>Assess ancient habitability</li>
+                <li>
+                  Seek signs of ancient life, particularly in special rocks
+                  known to preserve signs of life over time
+                </li>
+                <li>
+                  Gather rock and soil samples that could be returned to Earth
+                  by a future NASA mission
+                </li>
+                <li>
+                  Demonstrate technology for future robotic and human
+                  exploration
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/toggle.js"></script>
+  </body>
+</html>
