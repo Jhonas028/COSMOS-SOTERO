@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- >> header -->
-    <header class="py-7 relative shadow-md w-full z-50">
+    <header class="py-7 relative shadow-md w-full z-50 bg-[#0a0a0f]">
       <div class="container">
         <div class="flex justify-between items-center">
           <div class="flex items-center my-auto text-center">
@@ -21,10 +21,14 @@
           <nav class="headerNav">
             <ul>
               <li>
-                <a href="../src/index.html" class="text-starlight">Home</a>
+                <a href="../src/index.html">Home</a>
               </li>
               <li><a href="../src/missions.html">Missions</a></li>
-              <li><a href="../src/spacecraft.html">Spacecraft</a></li>
+              <li>
+                <a href="../src/spacecraft.html" class="text-starlight"
+                  >Spacecraft</a
+                >
+              </li>
               <li><a href="../src/gallery.html">Gallery</a></li>
               <li><a href="../src/contact.html">Contact</a></li>
             </ul>
@@ -41,7 +45,7 @@
     </header>
 
     <!-- contents -->
-    <section class="relative py-0 md:px-80">
+    <section class="relative py-12 md:px-80">
       <!-- stars bg — covers all sections -->
       <div
         style="background-image: url(&quot;../img/stars.jpg&quot;)"
@@ -203,7 +207,9 @@
     </section>
 
     <!-- cta -->
-    <section class="py-12 border-y border-white/20 p-12">
+    <section
+      class="py-12 border-y border-white/20 p-12 relative z-10 bg-[#0a0a0f]"
+    >
       <div class="container">
         <!-- wrapper -->
         <div
@@ -278,7 +284,7 @@
     </section>
 
     <!-- footer -->
-    <section class="py-4">
+    <section class="py-4 relative z-10 bg-[#0a0a0f]">
       <div class="container">
         <!-- wrapper -->
         <div class="items-center text-center text-text-primary/50">
