@@ -178,7 +178,7 @@
   }
   .transparent.open {
     @apply block fixed h-screen w-full backdrop-blur-sm left-0 
-    top-75 duration-300 overflow-y-hidden;
+    top-85 duration-300 overflow-y-hidden;
   }
 
   /* nav hover with underline effect */
