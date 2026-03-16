@@ -377,4 +377,21 @@
   .spec-stat-value {
     @apply text-starlight font-bold text-2xl mt-2;
   }
+
+  /* contact */
+  .form-group {
+    @apply flex flex-col gap-2;
+  }
+
+  .form-label {
+    @apply text-text-secondary text-sm font-semibold;
+  }
+
+  .form-input {
+    @apply w-full bg-cosmic-blue border border-white/20 rounded-xl px-4 py-3 text-text-primary text-sm placeholder:text-text-secondary focus:outline-none focus:border-starlight/50 transition-colors duration-300;
+  }
+
+  .form-textarea {
+    @apply w-full bg-cosmic-blue border border-white/20 rounded-xl px-4 py-3 text-text-primary text-sm placeholder:text-text-secondary focus:outline-none focus:border-starlight/50 transition-colors duration-300 resize-none h-32;
+  }
 }
