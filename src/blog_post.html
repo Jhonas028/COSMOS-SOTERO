@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="../dist/output.css" />
     <!-- in your <head> -->
 
-    <title>Home</title>
+    <title>Blog post</title>
   </head>
-  <body class="">
+  <body>
     <!-- >> header -->
     <header class="py-7 relative shadow-md w-full z-50">
       <div class="container">
@@ -77,51 +77,50 @@
           <p class="text-text-primary mt-5">📅 Launched: July 2020</p>
           <h1>Perseverance Rover</h1>
 
-          <h3>
+          <h4 class="font-inter text-text-secondary">
             Exploring Mars' Jezero Crater to seek signs of ancient life and
             collect samples for future return to Earth. The most sophisticated
             rover ever sent to the Red Planet.
-          </h3>
+          </h4>
         </div>
       </div>
     </section>
-
     <!-- blog body -->
-    <!-- blog header -->
-    <section class="relative h-[400px] bg-cover bg-center pt-[5px]">
+    <section class="relative bg-cover bg-center py-12">
       <!-- bg image with opacity -->
       <div
         style="background-image: url(&quot;../img/stars.jpg&quot;)"
         class="fixed inset-0 bg-cover bg-center opacity-40 -z-10"
       ></div>
-
       <div class="container">
         <!-- wrapper -->
-        <div class="">
+        <div class="md:flex md:justify-between md:gap-8 md:px-40">
           <!-- left -->
-          <div>
+          <div class="md:flex-2">
             <!-- p1 -->
-            <h3>
+            <p class="font-inter text-text-secondary">
               The Mars 2020 Perseverance rover mission is part of NASA's Mars
               Exploration Program, a long-term effort of robotic exploration of
               the Red Planet. The mission 'addresses high-. priority science
               goals for Mars exploration, including key questions about the
               potential for life on Mars.
-            </h3>
+            </p>
             <!-- p2 -->
-            <h3 class="pt-10">
+            <p class="pt-10 font-inter text-text-secondary">
               Perseverance is designed to better understand the geology of Mars
               and seek signs of ancient life. The mission will collect and store
               a set of rock and soil samples that could be returned to Earth in
               the future. It will also test new technology to benefit future
               robotic and human exploration of Mars.
-            </h3>
+            </p>
             <!-- objectives -->
             <div>
-              <h3 class="font-bold text-text-primary">Mission Objectives</h3>
+              <h3 class="font-bold text-text-primary mt-10">
+                Mission Objectives
+              </h3>
               <hr class="border-t border-starlight/50 mt-3 mb-6 w-48" />
               <ul
-                class="list-disc list-outside text-text-secondary text-sm leading-relaxed space-y-3 pl-4"
+                class="list-disc list-outside text-text-secondary leading-relaxed space-y-3 pl-4 font-inter text-base"
               >
                 <li>Explore geologically diverse landing site</li>
                 <li>Assess ancient habitability</li>
@@ -139,7 +138,361 @@
                 </li>
               </ul>
             </div>
+            <!-- key achievementts -->
+            <div>
+              <h3 class="font-bold text-text-primary mt-10">Key Achievemens</h3>
+              <hr class="border-t border-starlight/50 mt-3 mb-6 w-48" />
+              <p class="font-inter text-text-secondary">
+                Since landing in Jezero Crater on February 18, 2021,
+                Perseverance has traveled over 15 kilometers and collected 23
+                rock and soil samples. The rover successfully completed the
+                first powered flight on another planet by deploying the
+                Ingenuity helicopter, which exceeded expectations by completing
+                72 flights over nearly three years.
+              </p>
+              <!-- key achievements images -->
+              <div class="keyAchievement-img-grid">
+                <img
+                  src="../img/a6.jpg"
+                  alt="planet white"
+                  class="keyAchievement-img"
+                />
+                <img
+                  src="../img/blog2.webp"
+                  alt="planet yellow"
+                  class="keyAchievement-img"
+                />
+                <img
+                  src="../img/a2.jpg"
+                  alt="planet blue"
+                  class="keyAchievement-img"
+                />
+                <img
+                  src="../img/blog1.webp"
+                  alt="satelite"
+                  class="keyAchievement-img"
+                />
+              </div>
+            </div>
+            <!-- Technical Specification -->
+            <div>
+              <h3 class="font-bold text-text-primary mt-10">
+                Technical Specification
+              </h3>
+              <hr class="border-t border-starlight/50 mt-3 mb-6 w-48" />
+
+              <div class="spec-table">
+                <div class="spec-row">
+                  <p class="spec-label">Launch Vehicle</p>
+                  <p class="spec-value">Atlas V 541</p>
+                </div>
+                <div class="spec-row">
+                  <p class="spec-label">Launch Site</p>
+                  <p class="spec-value">
+                    Cape Canaveral Air Force Station, Florida
+                  </p>
+                </div>
+                <div class="spec-row">
+                  <p class="spec-label">Landing Site</p>
+                  <p class="spec-value">Jezero Crater, Mars</p>
+                </div>
+                <div class="spec-row">
+                  <p class="spec-label">Mission Duration</p>
+                  <p class="spec-value">
+                    At least 1 Mars year (about 687 Earth days)
+                  </p>
+                </div>
+                <div class="spec-row">
+                  <p class="spec-label">Mass</p>
+                  <p class="spec-value">1,025 kg (2,260 lbs)</p>
+                </div>
+                <div class="spec-row">
+                  <p class="spec-label">Power Source</p>
+                  <p class="spec-value">
+                    Multi-Mission Radioisotope Thermoelectric Generator (MMRTG)
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- right -->
+          <div class="md:flex-1 mt-10 md:mt-0">
+            <!-- mission card -->
+            <div class="mission-data-card">
+              <!-- title -->
+              <div class="flex items-center gap-2 mb-4">
+                <span class="text-lg">📊</span>
+                <h4 class="font-bold text-text-primary">Mission Data</h4>
+              </div>
+
+              <!-- distance -->
+              <div class="mission-data-row">
+                <p class="mission-data-label">Distance Traveled</p>
+                <p class="mission-data-value">28.5 km</p>
+              </div>
+              <div class="mission-progress"></div>
+
+              <!-- samples -->
+              <div class="mission-data-row">
+                <p class="mission-data-label">Samples Collected</p>
+                <p class="mission-data-value">23 / 30</p>
+              </div>
+              <div class="mission-progress"></div>
+
+              <!-- sol -->
+              <div class="mission-data-row">
+                <p class="mission-data-label">Sol (Mars Day)</p>
+                <p class="mission-data-value">1,089</p>
+              </div>
+
+              <!-- temperature -->
+              <div class="mission-data-row">
+                <p class="mission-data-label">Temperature</p>
+                <p class="mission-data-value">-63°C</p>
+              </div>
+
+              <!-- wind speed -->
+              <div class="mission-data-row">
+                <p class="mission-data-label">Wind Speed</p>
+                <p class="mission-data-value">22 km/h</p>
+              </div>
+            </div>
+
+            <!-- quick links -->
+            <div class="quick-links-card mt-10">
+              <!-- title -->
+              <div class="flex items-center gap-2 mb-4">
+                <span>🔗</span>
+                <h4 class="font-bold text-text-primary">Quick Links</h4>
+              </div>
+
+              <!-- links -->
+              <a href="#" class="quick-link-item">
+                <span>🔭</span> Live Mission Control
+              </a>
+              <a href="#" class="quick-link-item">
+                <span>📷</span> Raw Image Gallery
+              </a>
+              <a href="#" class="quick-link-item">
+                <span>📍</span> Interactive Map
+              </a>
+              <a href="#" class="quick-link-item">
+                <span>📺</span> Mission Videos
+              </a>
+              <a href="#" class="quick-link-item">
+                <span>📋</span> Scientific Papers
+              </a>
+            </div>
+
+            <!-- share mission -->
+            <div class="bg-cosmic-blue rounded-2xl p-6 mt-10">
+              <!-- title -->
+              <div class="flex items-center gap-2 mb-5">
+                <span>📤</span>
+                <h4 class="font-bold text-text-primary">Share Mission</h4>
+              </div>
+
+              <!-- social buttons -->
+              <div class="flex items-center gap-3">
+                <a href="#" class="social-btn">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="social-btn">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="social-btn">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="social-btn">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- related missions -->
+    <div class="bg-cosmic-blue/30 py-12">
+      <div class="container">
+        <!-- wrapper -->
+        <div>
+          <div class="mx-auto text-center">
+            <h3 class="font-bold text-text-primary">Related Missions</h3>
+            <p>Explore other active missions in our solar system</p>
+          </div>
+          <!-- cards -->
+
+          <div class="md:grid md:grid-cols-3 md:gap-8">
+            <!-- card 1 -->
+            <div class="related-card">
+              <img
+                src="../img/blog1.webp"
+                alt="International Space Station"
+                class="related-card-img"
+              />
+              <div class="related-card-body">
+                <h3 class="related-card-title">International Space Station</h3>
+                <p class="related-card-desc">
+                  Continuous human presence in low Earth orbit for over 23
+                  years.
+                </p>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="related-card">
+              <img
+                src="../img/a1.jpg"
+                alt="International Space Station"
+                class="related-card-img"
+              />
+              <div class="related-card-body">
+                <h3 class="related-card-title">James Webb Telescope</h3>
+                <p class="related-card-desc">
+                  Observing the universe in infrared to see the first galaxies.
+                </p>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="related-card">
+              <img
+                src="../img/blog1.webp"
+                alt="International Space Station"
+                class="related-card-img"
+              />
+              <div class="related-card-body">
+                <h3 class="related-card-title">James Webb Telescope</h3>
+                <p class="related-card-desc">
+                  Returning humans to the Moon and establishing sustainable
+                  presence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cta -->
+    <section class="py-12 border-y border-white/20 p-12">
+      <div class="container">
+        <!-- wrapper -->
+        <div
+          class="flex flex-col items-center gap-6 md:flex-row md:justify-between"
+        >
+          <div class="flex items-center gap-2">
+            <img class="size-15" src="../img/logo.png" alt="" />
+            <span class="text-3xl font-bold">COSMOS</span>
+          </div>
+          <!-- texts -->
+          <nav>
+            <ul class="flex flex-row gap-8 text-text-primary/50">
+              <li><a href="../src/index.html">Home</a></li>
+              <li><a href="../src/missions.html">Missions</a></li>
+              <li><a href="../src/spacecraft.html">Spacecraft</a></li>
+              <li><a href="../src/spacecraft.html">Gallery</a></li>
+            </ul>
+          </nav>
+          <!-- icons -->
+          <div class="flex items-center gap-3 justify-center mt-5 md:mt-0">
+            <a href="#" class="social-btn">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="social-btn">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="social-btn">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.27 8.27 0 004.84 1.56V6.79a4.85 4.85 0 01-1.07-.1z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="social-btn">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="pb-4">
+      <div class="container">
+        <!-- wrapper -->
+        <div class="items-center text-center text-text-primary/50">
+          <p>&copy; 2026 Cosmos Space Exploration. All rights reserved.</p>
+
+          <p class="italic">Designed by Vince</p>
         </div>
       </div>
     </section>
